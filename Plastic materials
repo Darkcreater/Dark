@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintex - Injection Molding</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Injection Molding and Plastic Materials</h1>
+    </header>
+    
+    
+    
+    <section class="section" id="plasticMaterials">
+        <h2>Plastic Materials</h2>
+        <ul class="material-list">
+<!-- Material 1: PE  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(1)">Polyethylene</button>
+    <div class="material-info" id="material1Info">
+        <p class="material-detail">Melting Point: 115-135°C</p>
+        <p class="material-detail">Full Form: Polyethylene</p>
+        <p class="material-detail">Nature: Polyethylene is a thermoplastic polymer.</p>
+        <p class="material-detail">Uses: Commonly used in packaging materials, plastic bags, bottles, toys, and medical devices.</p>
+        <p class="material-detail">Types: Includes HDPE (High-Density Polyethylene) and LDPE (Low-Density Polyethylene).</p>
+        <p class="material-detail">Grades: Varies based on factors like molecular weight and density.</p>
+    </div>
+</li>
+
+<!-- Material 2: PP  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(2)">Polypropylene</button>
+    <div class="material-info" id="material2Info">
+        <p class="material-detail">Melting Point: 160-166°C</p>
+        <p class="material-detail">Full Form: Polypropylene</p>
+        <p class="material-detail">Nature: Polypropylene is a versatile thermoplastic polymer.</p>
+        <p class="material-detail">Uses: Widely used in packaging, automotive parts, medical devices, and textiles.</p>
+        <p class="material-detail">Types: Comes in various types, including homopolymer and copolymer.</p>
+        <p class="material-detail">Grades: Choice of grade depends on factors like flexibility and impact resistance.</p>
+    </div>
+</li>
+
+<!-- Material 3: PA6  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(3)">PA6 (Polyamide 6)</button>
+    <div class="material-info" id="material3Info">
+        <p class="material-detail">Melting Point: 220-230°C</p>
+        <p class="material-detail">Full Form: Polyamide 6</p>
+        <p class="material-detail">Nature: PA6 is a synthetic polymer known for its toughness and flexibility.</p>
+        <p class="material-detail">Uses: Used in engineering applications like automotive parts, electrical connectors, and industrial components.</p>
+        <p class="material-detail">Types: Variations include PA66 (Polyamide 66) and PA11 (Polyamide 11).</p>
+        <p class="material-detail">Grades: Can be modified for enhanced properties, such as heat resistance.</p>
+    </div>
+</li>
+
+<!-- Material 4: PA66  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(4)">PA66 (Polyamide 66)</button>
+    <div class="material-info" id="material4Info">
+        <p class="material-detail">Melting Point: 255-265°C</p>
+        <p class="material-detail">Full Form: Polyamide 66</p>
+        <p class="material-detail">Nature: PA66 is a high-performance polyamide with excellent mechanical properties.</p>
+        <p class="material-detail">Uses: Used in applications requiring high strength and durability, like automotive components and industrial parts.</p>
+        <p class="material-detail">Types: It's a specific type of polyamide, related to PA6.</p>
+        <p class="material-detail">Grades: Grades may differ based on factors like heat resistance and stiffness.</p>
+    </div>
+</li>
+
+<!-- Material 5: PA46  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(5)">PA46 (Polyamide 46)</button>
+    <div class="material-info" id="material5Info">
+        <p class="material-detail">Melting Point: 295-305°C</p>
+        <p class="material-detail">Full Form: Polyamide 46</p>
+        <p class="material-detail">Nature: PA46 is a specialty polyamide known for its high melting point and mechanical strength.</p>
+        <p class="material-detail">Uses: Used in demanding applications like electrical connectors and automotive components.</p>
+        <p class="material-detail">Types: It's a specific type of polyamide.</p>
+        <p class="material-detail">Grades: PA46 can come in different grades for varying properties.</p>
+    </div>
+</li>
+
+<!-- Material 6: PBT  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(6)">PBT (Polybutylene Terephthalate)</button>
+    <div class="material-info" id="material6Info">
+        <p class="material-detail">Melting Point: 225-235°C</p>
+        <p class="material-detail">Full Form: Polybutylene Terephthalate</p>
+        <p class="material-detail">Nature: PBT is a semi-crystalline thermoplastic polyester.</p>
+        <p class="material-detail">Uses: Used in electrical connectors, automotive parts, and consumer electronics due to its good electrical properties.</p>
+        <p class="material-detail">Types: It's a specific type of thermoplastic polyester.</p>
+        <p class="material-detail">Grades: PBT grades can vary based on properties like flame retardancy and heat resistance.</p>
+    </div>
+</li>
+<!-- Material 7: ABS  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(7)">ABS (Acrylonitrile Butadiene Styrene)</button>
+    <div class="material-info" id="material7Info">
+        <p class="material-detail">Melting Point: 200-240°C</p>
+        <p class="material-detail">Full Form: Acrylonitrile Butadiene Styrene</p>
+        <p class="material-detail">Nature: ABS is a tough, impact-resistant thermoplastic.</p>
+        <p class="material-detail">Uses: Widely used in automotive parts, consumer electronics, toys, and household appliances.</p>
+        <p class="material-detail">Types: ABS can be modified with different ratios of its three components.</p>
+        <p class="material-detail">Grades: Grades vary based on properties like impact strength and heat resistance.</p>
+    </div>
+</li>
+
+<!-- Material 8: PA11  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(8)">PA11 (Polyamide 11)</button>
+    <div class="material-info" id="material8Info">
+        <p class="material-detail">Melting Point: 175-190°C</p>
+        <p class="material-detail">Full Form: Polyamide 11</p>
+        <p class="material-detail">Nature: PA11 is a semi-crystalline thermoplastic.</p>
+        <p class="material-detail">Uses: Commonly used in automotive tubing, oil and gas pipes, and industrial components.</p>
+        <p class="material-detail">Types: PA11 is a specific type of polyamide.</p>
+        <p class="material-detail">Grades: Can be customized for various applications, including high-temperature resistance.</p>
+    </div>
+</li>
+
+<!-- Material 9: HDPE  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(9)">HDPE (High-Density Polyethylene)</button>
+    <div class="material-info" id="material9Info">
+        <p class="material-detail">Melting Point: 130-135°C</p>
+        <p class="material-detail">Full Form: High-Density Polyethylene</p>
+        <p class="material-detail">Nature: HDPE is a high-density thermoplastic polymer.</p>
+        <p class="material-detail">Uses: Commonly used for containers, pipes, and plastic lumber due to its strength and chemical resistance.</p>
+        <p class="material-detail">Types: HDPE can have different densities and molecular weights.</p>
+        <p class="material-detail">Grades: Vary based on properties like density and melt flow rate.</p>
+    </div>
+</li>
+
+<!-- Material 10: LDPE  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(10)">LDPE (Low-Density Polyethylene)</button>
+    <div class="material-info" id="material10Info">
+        <p class="material-detail">Melting Point: 105-115°C</p>
+        <p class="material-detail">Full Form: Low-Density Polyethylene</p>
+        <p class="material-detail">Nature: LDPE is a low-density thermoplastic polymer.</p>
+        <p class="material-detail">Uses: Commonly used for plastic bags, tubing, and various containers.</p>
+        <p class="material-detail">Types: LDPE can vary in density and branching.</p>
+        <p class="material-detail">Grades: Grades may differ based on factors like density and melt index.</p>
+    </div>
+</li>
+
+<!-- Material 11: PVC  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(11)">PVC (Polyvinyl Chloride)</button>
+    <div class="material-info" id="material11Info">
+        <p class="material-detail">Melting Point: 160-185°C</p>
+        <p class="material-detail">Full Form: Polyvinyl Chloride</p>
+        <p class="material-detail">Nature: PVC is a versatile, thermoplastic polymer.</p>
+        <p class="material-detail">Uses: Widely used in construction materials, pipes, vinyl records, and medical devices.</p>
+        <p class="material-detail">Types: Includes rigid and flexible forms.</p>
+        <p class="material-detail">Grades: Grades vary based on properties like flexibility and chemical resistance.</p>
+    </div>
+</li>
+<!-- Material 13: PET  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(13)">PET (Polyethylene Terephthalate)</button>
+    <div class="material-info" id="material13Info">
+        <p class="material-detail">Melting Point: 245-255°C</p>
+        <p class="material-detail">Full Form: Polyethylene Terephthalate</p>
+        <p class="material-detail">Nature: PET is a strong and lightweight thermoplastic polymer.</p>
+        <p class="material-detail">Uses: Commonly used in beverage bottles, food packaging, and textiles.</p>
+        <p class="material-detail">Types: Includes PETE (polyethylene terephthalate ethylene) and other variations.</p>
+        <p class="material-detail">Grades: Grades may vary for different applications, such as PETG for sheet extrusion.</p>
+    </div>
+</li>
+
+<!-- Material 14: PC  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(14)">PC (Polycarbonate)</button>
+    <div class="material-info" id="material14Info">
+        <p class="material-detail">Melting Point: 240-270°C</p>
+        <p class="material-detail">Full Form: Polycarbonate</p>
+        <p class="material-detail">Nature: Polycarbonate is a transparent and impact-resistant thermoplastic.</p>
+        <p class="material-detail">Uses: Used in eyewear lenses, safety helmets, and electronic components.</p>
+        <p class="material-detail">Types: Can vary in impact resistance, UV resistance, and flame retardancy.</p>
+        <p class="material-detail">Grades: Different grades cater to specific requirements like optical clarity.</p>
+    </div>
+</li>
+
+<!-- Material 15: PS  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(15)">PS (Polystyrene)</button>
+    <div class="material-info" id="material15Info">
+        <p class="material-detail">Melting Point: 230-240°C</p>
+        <p class="material-detail">Full Form: Polystyrene</p>
+        <p class="material-detail">Nature: PS is a versatile and rigid thermoplastic polymer.</p>
+        <p class="material-detail">Uses: Used in disposable cutlery, packaging, and insulation materials.</p>
+        <p class="material-detail">Types: Includes general-purpose PS (GPPS) and high-impact PS (HIPS).</p>
+        <p class="material-detail">Grades: Grades differ based on factors like impact resistance and transparency.</p>
+    </div>
+</li>
+
+<!-- Material 16: PMMA  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(16)">PMMA (Polymethyl Methacrylate)</button>
+    <div class="material-info" id="material16Info">
+        <p class="material-detail">Melting Point: 160-220°C</p>
+        <p class="material-detail">Full Form: Polymethyl Methacrylate</p>
+        <p class="material-detail">Nature: PMMA is a transparent and lightweight thermoplastic.</p>
+        <p class="material-detail">Uses: Commonly used in acrylic glass, optical lenses, and automotive light covers.</p>
+        <p class="material-detail">Types: Variations include cast and extruded PMMA.</p>
+        <p class="material-detail">Grades: Grades may differ in optical clarity, UV resistance, and impact resistance.</p>
+    </div>
+</li>
+
+<!-- Material 17: POM  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(17)">POM (Polyoxymethylene)</button>
+    <div class="material-info" id="material17Info">
+        <p class="material-detail">Melting Point: 165-175°C</p>
+        <p class="material-detail">Full Form: Polyoxymethylene</p>
+        <p class="material-detail">Nature: POM is a strong and rigid engineering thermoplastic.</p>
+        <p class="material-detail">Uses: Used in precision parts, gears, and automotive components.</p>
+        <p class="material-detail">Types: Includes copolymer and homopolymer forms of POM.</p>
+        <p class="material-detail">Grades: Grades may vary based on factors like chemical resistance and wear resistance.</p>
+    </div>
+</li>
+<!-- Material 18: ABS/PC  Blend -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(18)">ABS/PC Blend</button>
+    <div class="material-info" id="material18Info">
+        <p class="material-detail">Melting Point: Varies based on the blend ratio</p>
+        <p class="material-detail">Full Form: Acrylonitrile Butadiene Styrene/Polycarbonate Blend</p>
+        <p class="material-detail">Nature: A blend of ABS and PC, combining their properties.</p>
+        <p class="material-detail">Uses: Used in automotive interiors, electronic enclosures, and consumer products.</p>
+        <p class="material-detail">Types: Blends can have different ratios of ABS to PC.</p>
+        <p class="material-detail">Grades: Grades can be tailored for specific applications.</p>
+    </div>
+</li>
+
+<!-- Material 19: PPS  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(19)">PPS (Polyphenylene Sulfide)</button>
+    <div class="material-info" id="material19Info">
+        <p class="material-detail">Melting Point: 280-330°C</p>
+        <p class="material-detail">Full Form: Polyphenylene Sulfide</p>
+        <p class="material-detail">Nature: PPS is a high-performance, semi-crystalline thermoplastic.</p>
+        <p class="material-detail">Uses: Commonly used in automotive parts, electrical components, and chemical equipment.</p>
+        <p class="material-detail">Types: Different grades can vary in properties like heat resistance and electrical conductivity.</p>
+        <p class="material-detail">Grades: Grades are tailored for specific industry requirements.</p>
+    </div>
+</li>
+
+<!-- Material 20: PTFE  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(20)">PTFE (Polytetrafluoroethylene)</button>
+    <div class="material-info" id="material20Info">
+        <p class="material-detail">Melting Point: 327°C</p>
+        <p class="material-detail">Full Form: Polytetrafluoroethylene</p>
+        <p class="material-detail">Nature: PTFE is a high-performance, non-stick fluoropolymer.</p>
+        <p class="material-detail">Uses: Widely used in non-stick cookware, electrical insulation, and industrial applications.</p>
+        <p class="material-detail">Types: PTFE is known for its low friction and chemical resistance.</p>
+        <p class="material-detail">Grades: Grades may vary in properties like purity and tensile strength.</p>
+    </div>
+</li>
+
+<!-- Material 21: TPU  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(21)">TPU (Thermoplastic Polyurethane)</button>
+    <div class="material-info" id="material21Info">
+        <p class="material-detail">Melting Point: Varies based on the formulation</p>
+        <p class="material-detail">Full Form: Thermoplastic Polyurethane</p>
+        <p class="material-detail">Nature: TPU is a versatile elastomer with excellent flexibility and durability.</p>
+        <p class="material-detail">Uses: Used in footwear, automotive parts, and phone cases due to its flexibility and abrasion resistance.</p>
+        <p class="material-detail">Types: TPU can have different hardness levels and properties.</p>
+        <p class="material-detail">Grades: Grades are formulated for specific applications.</p>
+    </div>
+</li>
+
+<!-- Material 22: PA12  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(22)">PA12 (Polyamide 12)</button>
+    <div class="material-info" id="material22Info">
+        <p class="material-detail">Melting Point: 170-180°C</p>
+        <p class="material-detail">Full Form: Polyamide 12</p>
+        <p class="material-detail">Nature: PA12 is a semi-crystalline thermoplastic with good chemical resistance.</p>
+        <p class="material-detail">Uses: Commonly used in automotive fuel lines, air brake tubing, and industrial applications.</p>
+        <p class="material-detail">Types: PA12 is a specific type of polyamide.</p>
+        <p class="material-detail">Grades: Grades can vary based on factors like flexibility and chemical resistance.</p>
+    </div>
+</li>
+<!-- Material 23: TPO  -->
+<li class="material">
+    <button class="material-button" onclick="showMaterialInfo(23)">TPO (Thermoplastic Olefin)</button>
+    <div class="material-info" id="material23Info">
+        <p class="material-detail">Melting Point: Varies based on the specific formulation</p>
+        <p class="material-detail">Full Form: Thermoplastic Olefin</p>
+        <p class="material-detail">Nature: TPO is a flexible and weather-resistant thermoplastic elastomer.</p>
+        <p class="material-detail">Uses: Commonly used in automotive interiors, roofing membranes, and outdoor products due to its UV resistance.</p>
+        <p class="material-detail">Types: TPO can have different compositions and properties based on additives.</p>
+        <p class="material-detail">Grades: Grades may vary for specific applications like automotive bumper fascia.</p>
+    </div>
+</li>
+         
+
+            <!-- Continue adding more materials (Material 4 to 27) -->
+        </ul>
+    </section>
+
+    <section class="section" id="troubleshooting">
+        <h2>Troubleshooting Solutions</h2>
+        <ul class="solution-list">
+            <!-- Burn Mark Solution -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('burnMark')">Burn Mark</button>
+                <div class="solution-info" id="burnMarkInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Burn Mark: Reduce melt temperature, injection speed, and hold pressure. Improve ventilation and ensure uniform mold temperature.</p>
+                </div>
+            </li>
+
+            <!-- Sink Solution -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('sink')">Sink</button>
+                <div class="solution-info" id="sinkInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Sink: Adjust cooling time and pressure to minimize sink marks. Optimize gate location and consider rib design.</p>
+                </div>
+            </li>
+
+            <!-- Warping Solution -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('warping')">Warping</button>
+                <div class="solution-info" id="warpingInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Warping: Ensure uniform mold temperature. Reduce cooling time, mold temperature, and stress in the part design. Use proper cooling channels.</p>
+                </div>
+            </li>
+
+            <!-- Short Shot Solution -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('shortShot')">Short Shot</button>
+                <div class="solution-info" id="shortShotInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Short Shot: Increase melt temperature and injection pressure. Check for air entrapment and venting issues. Optimize gate size and location.</p>
+                </div>
+            </li>
+
+            <!-- Flash Solution -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('flash')">Flash</button>
+                <div class="solution-info" id="flashInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Flash: Tighten mold clamping force, reduce injection speed, and increase mold temperature. Inspect and maintain mold for proper alignment.</p>
+                </div>
+            </li>
+
+            <!-- Jetting Solution -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('jetting')">Jetting</button>
+                <div class="solution-info" id="jettingInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Jetting: Increase melt temperature and injection speed. Optimize gate design for smoother flow. Check for air entrapment and mold surface quality.</p>
+                </div>
+            </li>
+
+            <!-- Sink Marks Solution -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('sinkMarks')">Sink Marks</button>
+                <div class="solution-info" id="sinkMarksInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Sink Marks: Adjust cooling time and pressure to minimize sink marks. Optimize gate location and consider rib design.</p>
+                </div>
+            </li>
+
+            <!-- Continue adding more troubleshooting solutions with solutions as needed -->
+            <!-- Solutions 8 to 13 -->
+            <!-- Solutions 8: Weld Lines -->
+            <li class="solution">
+                <button class="solution-button" onclick="showSolution('weldLines')">Weld Lines</button>
+                <div class="solution-info" id="weldLinesInfo" style="display: none;">
+                    <p class="solution-detail">Solution for Weld Lines: Increase melt temperature, injection pressure, and mold temperature. Optimize gate design and minimize flow path restrictions.</p>
+<!-- Solutions 9: Air Traps -->
+        <li class="solution">
+            <button class="solution-button" onclick="showSolution('airTraps')">Air Traps</button>
+            <div class="solution-info" id="airTrapsInfo" style="display: none;">
+                <p class="solution-detail">Solution for Air Traps: Increase injection pressure and speed. Ensure proper venting and gate design. Optimize runner and gate sizes.</p>
+            </div>
+        </li>
+
+        <!-- Solutions 10: Voids -->
+        <li class="solution">
+            <button class="solution-button" onclick="showSolution('voids')">Voids</button>
+            <div class="solution-info" id="voidsInfo" style="display: none;">
+                <p class="solution-detail">Solution for Voids: Optimize melt temperature, injection speed, and pressure. Ensure proper venting and eliminate air entrapment in the mold.</p>
+            </div>
+        </li>
+
+        <!-- Solutions 11: Parting Line Flash -->
+        <li class="solution">
+            <button class="solution-button" onclick="showSolution('partingLineFlash')">Parting Line Flash</button>
+            <div class="solution-info" id="partingLineFlashInfo" style="display: none;">
+                <p class="solution-detail">Solution for Parting Line Flash: Check mold alignment and clamping force. Use appropriate mold release agents. Adjust injection speed and pressure.</p>
+            </div>
+        </li>
+
+        <!-- Solutions 12: Excessive Shrinkage -->
+        <li class="solution">
+            <button class="solution-button" onclick="showSolution('excessiveShrinkage')">Excessive Shrinkage</button>
+            <div class="solution-info" id="excessiveShrinkageInfo" style="display: none;">
+                <p class="solution-detail">Solution for Excessive Shrinkage: Increase mold temperature and packing pressure. Adjust gate size and location. Use materials with lower shrinkage rates.</p>
+            </div>
+        </li>
+
+        <!-- Continue adding more troubleshooting solutions with solutions as needed -->
+        <!-- Solutions 13 to 27 -->
+    </ul>
+</section>
+
+<script>
+    function showMaterialInfo(materialNumber) {
+        // Hide all material info sections
+        var materialInfos = document.querySelectorAll(".material-info");
+        materialInfos.forEach(function(info) {
+            info.style.display = "none";
+        });
+
+        // Show the selected material info section
+        var materialInfo = document.getElementById("material" + materialNumber + "Info");
+        materialInfo.style.display = "block";
+    }
+
+    function showSolution(solutionName) {
+        // Hide all solution info sections
+        var solutionInfos = document.querySelectorAll(".solution-info");
+        solutionInfos.forEach(function(info) {
+            info.style.display = "none";
+        });
+
+        // Show the selected solution info section
+        var solutionInfo = document.getElementById(solutionName + "Info");
+        solutionInfo.style.display = "block";
+    }
+</script>
